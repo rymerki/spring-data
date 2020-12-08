@@ -5,10 +5,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Service;
 
-import br.com.alura.spring.data.orm.Cargo;
 import br.com.alura.spring.data.orm.Funcionario;
 import br.com.alura.spring.data.repository.FuncionarioRepository;
 
@@ -27,13 +25,10 @@ public class RelatoriosService {
 
 	public void inicial(Scanner scanner) {
 		while(system) {
-			System.out.println("Qual acao de CARGO deseja executar?");
+			System.out.println("Qual acao de RELATORIO deseja executar?");
 			System.out.println("0 - sair");
 			System.out.println("1 - busca funcionario nome");
-//			System.out.println("2 - atualizar");
-//			System.out.println("3 - visualizar");
-//			System.out.println("4 - deletar");
-//			
+			System.out.println("2 - busca funcionario nome, data contratacao e salario maior");		
 			int action = scanner.nextInt();
 			
 			switch (action) {
