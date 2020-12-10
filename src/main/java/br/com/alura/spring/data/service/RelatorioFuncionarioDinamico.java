@@ -2,11 +2,9 @@ package br.com.alura.spring.data.service;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
 import java.util.List;
 import java.util.Scanner;
 
-import org.hibernate.internal.build.AllowSysOut;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
